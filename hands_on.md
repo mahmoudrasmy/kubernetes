@@ -8,6 +8,11 @@
  - To Describe pods ===> $kubectl describe pods
  - To Execute a command directly ===> $kubectl exec $POD_NAME env
  
+## Test the Cluster
+ - sudo kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port=8080
+ - sudo kubectl expose deployment hello-minikube --type=NodePort
+ - sudo minikube service hello-minikube --url
+ 
 ## First Lab on Kubernetes
  - To list all docker commands ===> $sudo docker images 
  - To Get cluster info ====> $sudo kubectl cluster-info
